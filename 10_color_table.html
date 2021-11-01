@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Enmet, 젠코딩-->
+    <!--table[border=1]-->
+    <table border="1">
+    <caption>테이블 제목</caption>
+
+    <!--열(column)단위로 색을 바꿈-->
+    <colgroup>
+        <!--<col span="1" style="background-color: red;"> 1번째 색 변경-->
+        <!--<col span="2" style="background-color: red;"> 1번째랑 2번째 색 변경-->
+        <col style="background-color: rgb(127, 127, 252);"><!--다음 칸 색 변경-->
+        <col style="background-color: rgb(190, 190, 255);"><!--다음 칸 색 변경-->
+        <col style="background-color: rgb(110, 110, 255);"><!--다음 칸 색 변경-->
+        <!--이거를 사용하려면 tbody의 style을 지워야함-->
+    </colgroup>
+    
+    <!--테이블의 제목 부분-->
+    <thead style="background-color: rgb(188, 245, 188);">
+        <tr><!--th*3{table Header}-->
+            <th>Table Header</th>
+            <th>Table Header</th>
+            <th>Table Header</th>
+        </tr>
+    </thead>
+
+    <!--테이블의 본문 부분-->
+    <tbody>
+        <!--tr*3>td*3-->
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+    </tbody>
+
+      <!--테이블의 끝 부분-->
+    <tfoot style="background-color: rgb(255, 255, 184);">
+        <tr>
+            <td>Table Foot Data</td>
+            <td>Table Foot Data</td>
+            <td>Table Foot Data</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
