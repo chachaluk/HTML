@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 원점을 기준으로 이동 */
+        /* 무조건 정해진 위치로(고정된 위치, 절대좌표)이동 */
+        /* 절대좌표계 */
+        /* 0,0(좌측상단) 기준으로 이동 */
+        .box {
+            width: 100px;
+            height: 100px;
+            /* z-index적용을 위하여 position은 static이외의 값으로 */
+            position: relative;
+        }
+
+        .red {
+            background-color: red;
+            position: fixed;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+
+        .gree {
+            background-color: green;
+            position: fixed;
+            left: 30px;
+            top: 30px;
+        }
+
+        .blue {
+            background-color: blue;
+            z-index: 2222222999999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+
+</html>

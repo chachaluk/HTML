@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 부모가 static이 아닌 경우에는 부모태그를 기준으로 절대좌표 */
+        /* 부모태그가 static인 경우에는 fixed와 똑같이 동작 */
+        /* fixed와 매우 유사, 부모 태그의 position값이 static이 아니면 */
+        /* 그 부모태그의 좌측상단을 기준으로 좌표를 잡음 */
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+
+        .mini_box {
+            width: 200px;
+            height: 30px;
+            position: absolute;
+        }
+
+        .red {
+            background-color: red;
+            left: 50px;
+            top: 50px;
+        }
+
+        .green {
+            background-color: green;
+            left: 300px;
+            top: 30px;
+            position: relative;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .pink {
+            background-color: pink;
+            left: 500px;
+            top: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red">
+        <div class="mini_box pink">rrrrr</div>
+    </div>
+    <div class="box green">
+        <div class="mini_box pink">ggggg</div>
+    </div>
+    <div class="box blue">
+
+    </div>
+
+</body>
+
+</html>
