@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        input[type=checkbox]:checked+div/* 타입이 checkbox인 input인데 체크가 되어있는 div */
+        {
+            height:0;
+        }
+        div
+        {
+            overflow: hidden;/* 숨겨짐 */
+            width: 650px; 
+            height: 300px;
+            transition-duration: 1s;/* 이행기간: 상태변화가 있을 때 1초동안 변하겠다 - 애니메이션효과 */
+       
+            /* 구형 웹브라우저에서는 이 transition-duration이 일종의 출시직전의 실험기능에 해당 */
+            /* 앞에 -ms- -webkit- -moz-를 벤더 프리픽스라고 함 */
+            /* -ms- 마이크로소프트, -moz- 모질라재단(파이어폭스)*/
+            /* -webkit- 애플에서 만들었는데 크롬, 오페라, 사파리에서 씀, 크롬은 블링크라는 이름 */
+            -ms-transition-duration:1s;
+            -webkit-transition-duration:1s;
+            -moz-transition-duration:1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas iure adipisci ex autem nam doloribus in vero cupiditate dignissimos veritatis ipsum eveniet, odit suscipit dolore itaque repellendus consequatur culpa.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias itaque libero sint assumenda reiciendis laborum rerum totam impedit, officiis dolorum dolores dicta. Cum fugiat ipsum quibusdam ut nemo eius. Saepe.</p>
+    </div>
+</body>
+</html>

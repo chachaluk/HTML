@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!--HTML5와 XHTML5의 이름의 표기법 차이일 뿐 둘은 똑같다. -->
+    <video src="Waves - 70796.mp4" controls></video>
+    <video src="Waves - 70796.mp4" controls="controls"></video>
+    
+    <h1>자동재생하고싶다면</h1>
+    <p>소리를 음소거해야지만 자동재생 가능</p>
+    <video src="Waves - 70796.mp4" controls autoplay muted></video>
+
+    <!-- 해당 동영상의 썸네일을 미리 넣고, 해당 동영상이 재생이 안 될 경우 대비 방법 -->
+    <!-- width="640px" height="360px" 사이즈조정 -->
+    <!-- controls poster="컴_배경화면_우주하마" 재생하기 전 미리보기 화면 -->
+    <video width="640px" height="360px" controls poster="컴_배경화면_우주하마.png">
+
+        <!-- 동영상 mp4확장자가 재생 안되면 webm확장자 동영상이 재생되게하는 것 -->
+        <!-- 사실은 webm파일도 넣어야하지만 생략 -->
+        <source src="Waves - 70796.mp4" type="video/mp4"> 
+        <source src="Waves - 70796.mp4" type="video/wenm"> 
+    </video>
+</body>
+</html>
